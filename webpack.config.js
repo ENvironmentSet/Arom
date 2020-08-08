@@ -22,5 +22,6 @@ module.exports = {
       }
     ]
   },
+  stats: 'errors-only',
   target: 'async-node'
 };
