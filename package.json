@@ -23,7 +23,6 @@
     "fp-ts": "^2.8.1",
     "ink": "^3.0.3",
     "ink-big-text": "^1.2.0",
-    "ink-gradient": "^1.0.0",
     "react": "^16.13.1"
   },
   "devDependencies": {
