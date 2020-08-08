@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ENvironmentSet/Arom#readme",
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.19.2",
     "fp-ts": "^2.8.1",
     "ink": "^3.0.3",
     "ink-big-text": "^1.2.0",
