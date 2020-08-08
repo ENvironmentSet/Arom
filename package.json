@@ -23,7 +23,8 @@
     "fp-ts": "^2.8.1",
     "ink": "^3.0.3",
     "ink-big-text": "^1.2.0",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-router": "^5.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
