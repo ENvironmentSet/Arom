@@ -4,7 +4,7 @@
   "description": "Arom, a phonological process inspector for Korean",
   "private": true,
   "scripts": {
-    "dev": "npm run build; node cli.js",
+    "dev": "npm run build; node cli.js; npm run clean",
     "build": "babel src/app.js -o cli.js",
     "clean": "rm cli.js"
   },
