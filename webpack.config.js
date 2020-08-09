@@ -1,11 +1,11 @@
 const { resolve } = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   target: 'async-node',
   entry: resolve('src', 'app.js'),
   output: {
-    path: resolve('dist'),
+    path: resolve('bin'),
     filename: 'cli.js'
   },
   module: {
