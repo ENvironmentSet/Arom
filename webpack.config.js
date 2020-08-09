@@ -1,11 +1,11 @@
-const path = require('path');
+const { resolve } = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve('src', 'app.js'),
-  devtool: 'inline-cheap-source-map',
+  target: 'async-node',
+  entry: resolve('src', 'app.js'),
   output: {
-    path: path.resolve('dist'),
+    path: resolve('dist'),
     filename: 'cli.js'
   },
   module: {
@@ -16,12 +16,16 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-transform-runtime']
           }
         }
       }
     ]
   },
-  stats: 'errors-only',
-  target: 'async-node'
+  externals: {
+    'java': 'require("java")'
+  },
+  devtool: 'inline-cheap-source-map',
+  stats: 'errors-only'
 };
